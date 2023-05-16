@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  background-color: rgba(103, 136, 103, 0.837);
+  color: rgb(229, 183, 190);
+  font-family: "Courier New", Courier, monospace;
+}
+
+#red-button {
+  background-color: rgb(249, 77, 77);
+}
+
+#white-button {
+  background-color: whitesmoke;
+}
+
+.button {
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.red {
+  background-color: rgb(249, 77, 77);
+}
+
+.white {
+  background-color: whitesmoke;
+}
