@@ -3,7 +3,8 @@
 // you need to make up that amount. If that amount of money cannot be made up by
 // any combination of the coins, return -1. Hint:  Sudo code this problem. Focus
 // on breaking the problem down into steps
-// Use functions, arrays and logical operators.
+// Use functions, arrays and logical operators. Do not have anyone give you the
+// answer or solve this problem for you.
 
 // Example 1:
 // Input: coins = [1, 2, 5], amount = 11
@@ -23,11 +24,11 @@
 // If it equals to goal set counter to that number of coins
 
 function fewestNumberOfCoins(coins, amount) {
-  // If the smallest coin is greater than the target amount, there is no comb that will make the amount, return -1
+  // If the smallest coin is greater than the goal amount, there is no combo that will make the amount, return -1
   if (Math.min(...coins) > amount) {
     return -1;
   }
-  // Create a 'coinOptions' array with the length set to our target 'amount + 1' This way we have one for each possible coin option
+  // Create a 'coinOptions' array with the length set to our goal 'amount + 1' This way we have one for each possible coin option
   // 'coinOptions' will store the minimum number of coins needed to make up each amount
   const coinOptions = Array(amount + 1).fill(amount);
   // Set the initial value of 'dp' at index 0 to 0, since no coins are needed to make up an amount of 0,
@@ -54,8 +55,8 @@ function fewestNumberOfCoins(coins, amount) {
 }
 const coins = [1, 2, 5];
 const amount = 11;
-console.log(fewestNumberOfCoins(coins, amount)); // Output: 3
+console.log(fewestNumberOfCoins(coins, amount));
 
 const coins2 = [2];
 const amount2 = 3;
-console.log(fewestNumberOfCoins(coins2, amount2)); // Output: -1
+console.log(fewestNumberOfCoins(coins2, amount2));
